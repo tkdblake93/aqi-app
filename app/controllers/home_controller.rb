@@ -3,7 +3,7 @@ class HomeController < ApplicationController
     require 'net/http'
     require 'json'
 
-    @url = 'http://www.airnowapi.org/aq/observation/zipCode/current/?format=application/json&zipCode=75080&distance=0&API_KEY=88136DCF-8404-4E67-A410-46FDA7019EF4'
+    @url = 'http://www.airnowapi.org/aq/observation/zipCode/current/?format=application/json&zipCode=75080&distance=0&API_KEY=********'
     @uri = URI(@url)
     @response = Net::HTTP.get(@uri)
     @output = JSON.parse(@response)
@@ -77,7 +77,7 @@ class HomeController < ApplicationController
       require 'net/http'
       require 'json'
 
-      @url = 'http://www.airnowapi.org/aq/observation/zipCode/current/?format=application/json&zipCode=' + @zip_query + '&distance=0&API_KEY=88136DCF-8404-4E67-A410-46FDA7019EF4'
+      @url = 'http://www.airnowapi.org/aq/observation/zipCode/current/?format=application/json&zipCode=' + @zip_query + '&distance=0&API_KEY=********'
       @uri = URI(@url)
       @response = Net::HTTP.get(@uri)
       @output = JSON.parse(@response)
