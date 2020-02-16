@@ -1,0 +1,10 @@
+<div class="jumbotron <%= @jumbo_border_color %>">
+  <h1 class="display-4"><span class="<%= @aqi_bg_color %>"><%= @final_output %></span></h1>
+  <p class="lead">This is the current ozone air quality readout for the <%= @local_output %> (<%= @state_output %>) area.</p>
+  <p><%= @aqi_description %></p>
+  <hr class="my-4">
+  <p>Reload the page in your browser by clicking the button below.</p>
+  <p class="lead">
+    <a class="btn btn-secondary btn-lg" href="#" role="button" onclick="javascript:location.reload(true);">Reload</a>
+  </p>
+</div>
